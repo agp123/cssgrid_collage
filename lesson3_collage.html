@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 3 - Collage</title>
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+
+		}
+
+		html,body{
+			padding: 0;
+			margin:0;
+					}
+
+		body{
+			
+		}
+
+		.container{
+			background: black;
+			height:650px ;
+			width:630px;
+			margin:auto;
+			display: grid;
+			grid-template-columns:1fr 1fr 1fr 1fr;
+			grid-template-rows:1fr 1fr 1fr 1fr;
+			grid-template-areas:
+			"p1 p1 p1 p1"
+			"p2 p3 p3 p4"
+			"p5 p3 p3 p6"
+			"p7 p8 p9 p10";
+			grid-gap:10px;
+			padding: 10px;
+ 		}
+
+		.item{
+			background: blue;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		#photo1{
+			grid-area:p1;
+			background: url(http://reallylatereviews.com/wp-content/uploads/2013/07/cory.jpg);
+			background-position: center;
+			background-size: cover;
+
+		}
+		#photo2{
+			grid-area:p2;
+			background: url(https://i.pinimg.com/originals/f4/cf/8f/f4cf8f3906e386f73fab2e44764aae77.jpg);
+			background-position: center;
+			background-size: cover;
+
+		}
+		#photo3{
+			grid-area:p3;
+			background: url(https://www.rollingstone.com/wp-content/uploads/2018/06/rs-18109-20131012-glee-thumb-624x420-1381607105.jpg?crop=900:600&width=440);
+			background-position: center;
+			background-size: cover;
+
+		}
+		#photo4{
+			grid-area:p4;
+			background: url(https://data.whicdn.com/images/69237349/large.png);
+			background-position: center;
+			background-size: cover;
+
+		}
+		#photo5{
+			grid-area:p5;
+			background: url(https://pbs.twimg.com/media/A_Kf_lpCMAAfT3d.jpg);
+			background-position: center;
+			background-size: cover;
+
+		}
+		#photo6{
+			grid-area:p6;
+			background: url(https://i0.wp.com/celebmix.com/wp-content/uploads/2016/07/friends-and-family-remember-cory-monteith-three-years-after-his-tragic-death-01.jpg?fit=500%2C333&ssl=1);
+			background-position:center;
+			background-size: cover;
+
+		}
+		#photo7{
+			grid-area:p7;
+			background: url(https://i1.wp.com/celebmix.com/wp-content/uploads/2018/07/remembering-cory-monteith-5-years-later-01.jpg?fit=500%2C513&ssl=1);
+			background-position:center;
+			background-size: cover;
+
+		}
+		#photo8{
+			grid-area:p8;
+			background: url(http://images5.fanpop.com/image/photos/25000000/-Cory-Monteith-cory-monteith-and-chris-colfer-25011305-500-400.jpg);
+			background-position:center;
+			background-size: cover;
+
+		}
+
+		#photo9{
+			grid-area:p9;
+			background: url(https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/6131837/cory.jpg?1477258281);
+			background-position:center;
+			background-size: cover;
+
+		}
+
+		#photo10{
+			grid-area:p10;
+			background: url(https://i.gifer.com/fetch/w300-preview/00/006cb0b5753beb6970be19793ce9cab3.gif);
+			background-position:center;
+			background-size: cover;
+
+		}
+
+				
+	</style>
+</head>
+<body>
+
+<div class="container">
+		<div class="item" id="photo1"></div>
+
+		<div class="item" id="photo2"></div>
+		
+		<div class="item" id="photo3"></div>
+		
+		<div class="item" id="photo4"></div>
+		
+		<div class="item" id="photo5"></div>
+		
+		<div class="item" id="photo6"></div>
+
+		<div class="item" id="photo7"></div>
+
+		<div class="item" id="photo8"></div>
+		
+		<div class="item" id="photo9"></div>
+
+		<div class="item" id="photo10"></div>
+
+	</div>
+
+</body>
+</html>
